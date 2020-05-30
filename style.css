@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
     background: #1b5e20;
+    font-family: 'Open Sans';
 }
 
 .centered {
@@ -20,7 +22,28 @@ body {
     color: #ffffff;
 }
 .slogan {
-    font-family: 'Open Sans';
     font-size: 18px;
+    font-weight: 600;
     color: rgba(255,255,255, 0.5);
+}
+.phone {
+    font-size: 14px;
+    color: rgba(255,255,255, 1);
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    text-align: right;
+    transform: translate(-10%, -10%);
+}
+
+.phone a {
+    vertical-align: top;
+    color: inherit
+}
+
+.phone .material-icons {
+    padding-top: 0px;
+    font-size: 22px
 }
