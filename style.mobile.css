@@ -1,0 +1,43 @@
+.centered {
+    background: green;
+    width: 62vw;
+    height: 11vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    width: 62vw;
+    font-family: 'Roboto Mono';
+    font-size: 4.16vw;
+    color: #ffffff;
+}
+.slogan {
+    font-size: 2.6vw;
+    font-weight: 600;
+    color: rgba(255,255,255, 0.5);
+}
+.phone {
+    background: green;
+    font-size: 1.6vw;
+    color: rgba(255,255,255, 1);
+    width: 20vw;
+    height: 2vw;
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    text-align: right;
+    transform: translate(-10%, -10%);
+}
+
+.phone a {
+    vertical-align: top;
+    color: inherit;
+}
+
+.phone .material-icons {
+    padding-top: 0px;
+    font-size: 2.2vw;
+}
