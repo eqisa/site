@@ -2,7 +2,7 @@
      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <style type="text/css">
-      @import url('https://fonts.googleapis.com/css?family=Lato|Doppio+One|Open+Sans|Amiko|Montserrat|Ramabhadra|Roboto+Slab|Indie+Flower|Gamja+Flower');
+      @import url('https://fonts.googleapis.com/css?family=Ramabhadra');
       text { font-family: Ramabhadra; font-weight: 700; fill:none; fill-opacity:1; }
       ellipse { fill:transparent; stroke: black; }
       .bg { fill: white; }
