@@ -1,0 +1,56 @@
+<svg viewBox="0 0 700 700"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Ramabhadra');
+      text { font-family: Ramabhadra; font-weight: 700; fill:none; fill-opacity:1; }
+      ellipse { fill:transparent; stroke: #1b5e20; }
+      .bg { fill: white; }
+      .fg { fill: #1b5e20; }
+    </style>
+  </defs>
+  <ellipse cx="350" cy="350" rx="300" ry="110"
+           style="stroke-width:7"
+           transform="rotate(0, 350, 350)"/>
+  <ellipse cx="350" cy="350" rx="300" ry="110"
+           style="stroke-width:5"
+           transform="rotate(340, 350, 350)"/>
+  <ellipse cx="350" cy="350" rx="300" ry="110"
+           style="stroke-width:7"
+           transform="rotate(70, 350, 350)"/>
+  <ellipse cx="350" cy="350" rx="300" ry="110"
+           style="stroke-width:4"
+           transform="rotate(50, 350, 350)"/>
+
+  <!--
+  <line x1="250" y1="250" x2="250" y2="500" style="stroke:rgb(255,0,0);stroke-width:2" />
+  <line x1="450" y1="250" x2="450" y2="500" style="stroke:rgb(255,0,0);stroke-width:2" />
+  -->
+
+  <circle cx="140" cy="160" r="5" stroke="#1b5e20" stroke-width="3" fill="white" />
+  <circle cx="250" cy="273" r="5" stroke="#1b5e20" stroke-width="3" fill="white" />
+  <circle cx="450" cy="427" r="5" stroke="#1b5e20" stroke-width="3" fill="white" />
+  <circle cx="560" cy="540" r="5" stroke="#1b5e20" stroke-width="3" fill="white" />
+  
+
+
+  <text class="bg" x="49.5%" y="50%" 
+        dominant-baseline="middle" text-anchor="middle" style="font-size: 90;">EQISA</text>
+  <text class="bg" x="50%" y="49.5%" 
+        dominant-baseline="middle" text-anchor="middle" style="font-size: 90;">EQISA</text>
+  <text class="bg" x="49.5%" y="49.5%" 
+        dominant-baseline="middle" text-anchor="middle" style="font-size: 90;">EQISA</text>
+  <text class="bg" x="50.5%" y="50%" 
+        dominant-baseline="middle" text-anchor="middle" style="font-size: 90;">EQISA</text>
+  <text class="bg" x="50%" y="50.5%" 
+        dominant-baseline="middle" text-anchor="middle" style="font-size: 90;">EQISA</text>
+  <text class="bg" x="50.5%" y="50.5%" 
+        dominant-baseline="middle" text-anchor="middle" style="font-size: 90;">EQISA</text>
+  <text class="bg" x="50.5%" y="49.5%" 
+        dominant-baseline="middle" text-anchor="middle" style="font-size: 90;">EQISA</text>
+  <text class="bg" x="49.5%" y="50.5%" 
+        dominant-baseline="middle" text-anchor="middle" style="font-size: 90">EQISA</text>
+  
+  <text class="fg" x="50%" y="50%" 
+        dominant-baseline="middle" text-anchor="middle" style="font-size: 90;">EQISA</text>
+</svg>
