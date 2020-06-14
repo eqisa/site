@@ -5,6 +5,7 @@
       @import url('https://fonts.googleapis.com/css?family=Ramabhadra');
       text { font-family: Ramabhadra; font-weight: 700; fill:none; fill-opacity:1; }
       ellipse { fill:transparent; stroke: #1b5e20; }
+      circle { fill: white; stroke: #1b5e20; }
       .bg { fill: white; }
       .fg { fill: #1b5e20; }
     </style>
@@ -27,7 +28,7 @@
   <line x1="450" y1="250" x2="450" y2="500" style="stroke:rgb(255,0,0);stroke-width:2" />
   -->
 
-  <circle cx="140" cy="160" r="5" stroke="#1b5e20" stroke-width="3" fill="white" />
+  <circle cx="140" cy="160" r="5" stroke-width="3" />
   <circle cx="250" cy="273" r="5" stroke="#1b5e20" stroke-width="3" fill="white" />
   <circle cx="450" cy="427" r="5" stroke="#1b5e20" stroke-width="3" fill="white" />
   <circle cx="560" cy="540" r="5" stroke="#1b5e20" stroke-width="3" fill="white" />
