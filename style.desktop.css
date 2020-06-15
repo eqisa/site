@@ -6,7 +6,6 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
 .title {
     width: 400px;
     font-family: 'Roboto Mono';
@@ -29,12 +28,10 @@
     text-align: right;
     transform: translate(-10%, -10%);
 }
-
 .phone a {
     vertical-align: top;
     color: inherit
 }
-
 .phone .material-icons {
     padding-top: 0px;
     font-size: 22px
