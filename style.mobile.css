@@ -1,5 +1,5 @@
 .centered {
-    width: 72vw;
+    width: 68vw;
     height: 11vw;
     position: absolute;
     left: 50%;
@@ -14,7 +14,7 @@
 }
 
 .title {
-    width: 72vw;
+    width: 68vw;
     font-family: 'Roboto Mono';
     font-size: 3.5vw;
     color: #ffffff;
