@@ -9,8 +9,8 @@
       }
       text { font-family: Ramabhadra; font-weight: 700; fill:none; fill-opacity:1; }
       ellipse { fill:transparent; stroke: #ffffff; }
-      circle { fill: #1b5e20; stroke: #ffffff; }
-      .bg { fill: #1b5e20; }
+      circle { fill: #000000; stroke: #ffffff; }
+      .bg { fill: #000000; }
       .fg { fill: #ffffff; }
     </style>
   </defs>
