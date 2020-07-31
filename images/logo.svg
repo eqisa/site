@@ -1,0 +1,42 @@
+<svg viewBox="0 0 700 700"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Lato|Doppio+One|Open+Sans|Amiko|Montserrat|Ramabhadra|Roboto+Slab|Indie+Flower|Gamja+Flower');
+      text { font-family: Ramabhadra; font-weight: 700; fill:none; fill-opacity:1; }
+      ellipse { fill:transparent; stroke:#fefefe;}
+    </style>
+  </defs>
+  <ellipse cx="350" cy="350" rx="300" ry="110"
+           style="stroke-width:7"
+           transform="rotate(0, 350, 350)"/>
+  <ellipse cx="350" cy="350" rx="300" ry="110"
+           style="stroke-width:5"
+           transform="rotate(-20, 350, 350)"/>
+  <ellipse cx="350" cy="350" rx="300" ry="110"
+           style="stroke-width:7"
+           transform="rotate(70, 350, 350)"/>
+  <ellipse cx="350" cy="350" rx="300" ry="110"
+           style="stroke-width:4"
+           transform="rotate(50, 350, 350)"/>
+  
+  <text x="49.5%" y="50%" 
+        dominant-baseline="middle" text-anchor="middle" style="fill: #1b5e20; font-size: 90;">EQISA</text>
+  <text x="50%" y="49.5%" 
+        dominant-baseline="middle" text-anchor="middle" style="fill: #1b5e20; font-size: 90;">EQISA</text>
+  <text x="49.5%" y="49.5%" 
+        dominant-baseline="middle" text-anchor="middle" style="fill: #1b5e20; font-size: 90;">EQISA</text>
+  <text x="50.5%" y="50%" 
+        dominant-baseline="middle" text-anchor="middle" style="fill: #1b5e20; font-size: 90;">EQISA</text>
+  <text x="50%" y="50.5%" 
+        dominant-baseline="middle" text-anchor="middle" style="fill: #1b5e20; font-size: 90;">EQISA</text>
+  <text x="50.5%" y="50.5%" 
+        dominant-baseline="middle" text-anchor="middle" style="fill: #1b5e20; font-size: 90;">EQISA</text>
+  <text x="50.5%" y="49.5%" 
+        dominant-baseline="middle" text-anchor="middle" style="fill: #1b5e20; font-size: 90;">EQISA</text>
+  <text x="49.5%" y="50.5%" 
+        dominant-baseline="middle" text-anchor="middle" style="fill: #1b5e20; font-size: 90">EQISA</text>
+  
+  <text x="50%" y="50%" 
+        dominant-baseline="middle" text-anchor="middle" style="fill: #fefefe; font-size: 90;">EQISA</text>
+</svg>
