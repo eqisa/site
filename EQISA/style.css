@@ -31,8 +31,10 @@ h2{
 color: white;
 font: bold;
 z-index: 5;
+    
 position: absolute;
-top: 50px;
+    margin-left: 240px;
+    top: 50px;
 left: 150px;
 width: 100%;
 }
