@@ -244,6 +244,7 @@ a {
   display: inline-flex;
   line-height: 60px;
   transition: background-color 0.5s;
+  padding: 0 10px;
 }
 .header .header-content .navbar .menu .menu-item a {
   color: #fff;
@@ -251,7 +252,6 @@ a {
   width: 100%;
   height: 100%;
   text-align: right;
-  padding: 0 10px;
 }
 .header .header-content .navbar .menu .menu-item .submenu {
   display: none;
