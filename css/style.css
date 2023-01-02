@@ -1728,12 +1728,20 @@ a {
   color: #d63200;
 }
 .message-box_wrapper .result-wrapper p {
-  font-size: 1rem;
   line-height: 1.5rem;
   color: rgba(0,0,0,0.5);
 }
 .message-box_wrapper .result-wrapper ul {
   list-style-type: none;
+}
+.message-box_wrapper .search-result-list li {
+  padding: 10px 0;
+}
+.message-box_wrapper .search-result-list li .color-primary {
+  font-size: 1.2rem;
+}
+.message-box_wrapper .search-result {
+  font: 0.8rem 'Open Sans';
 }
 #appDrawer .fa-bars {
   color: #fff;
