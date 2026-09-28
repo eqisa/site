@@ -1,0 +1,154 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid rgba(25, 80, 40, 0.08);
+}
+
+.social-links {
+  position: absolute;
+  left: 42px;
+  top: 32px;
+
+  display: flex;
+  gap: 22px;
+}
+
+.social-links a {
+  color: var(--eqisa-green);
+
+  font-size: 22px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-2px);
+  opacity: 0.7;
+}
+
+.header-main {
+  width: min(1200px, calc(100% - 60px));
+
+  min-height: 125px;
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.brand-name {
+  color: var(--eqisa-green);
+
+  font-family: "Arial Narrow", Arial, sans-serif;
+
+  font-size: clamp(28px, 3vw, 42px);
+
+  font-weight: 900;
+
+  letter-spacing: -1px;
+}
+
+.brand-description {
+  margin-top: 2px;
+
+  color: var(--eqisa-dark);
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  font-weight: 600;
+}
+
+.main-navigation {
+  display: flex;
+
+  gap: 34px;
+}
+
+.main-navigation a {
+  position: relative;
+
+  color: var(--eqisa-green);
+
+  font-size: 15px;
+
+  text-decoration: none;
+
+  padding-bottom: 5px;
+}
+
+.main-navigation a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--eqisa-green);
+
+  transition: width 0.25s ease;
+}
+
+.main-navigation a:hover::after {
+  width: 100%;
+}
+
+.cart-button {
+  position: absolute;
+  right: 40px;
+  top: 76px;
+
+  border: 0;
+
+  background: var(--eqisa-dark);
+
+  color: white;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 3px;
+}
+
+.cart-button strong {
+  font-size: 10px;
+}

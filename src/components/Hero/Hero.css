@@ -1,0 +1,391 @@
+.hero-section {
+  position: relative;
+
+  min-height: calc(100vh - 125px);
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 70% 65%,
+      rgba(31, 191, 65, 0.08),
+      transparent 35%
+    ),
+    #ffffff;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-message {
+  width: 100%;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  padding: 38px 0 20px;
+
+  color: var(--eqisa-green);
+
+  font-family: "Arial Narrow", Arial, sans-serif;
+
+  font-size: clamp(30px, 4vw, 56px);
+
+  font-weight: 900;
+
+  letter-spacing: -2px;
+}
+
+.hero-message span {
+  display: inline-block;
+
+  animation: heroText 18s linear infinite;
+}
+
+@keyframes heroText {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.hero-content {
+  width: min(1200px, calc(100% - 60px));
+
+  flex: 1;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+.hero-copy {
+  position: relative;
+
+  z-index: 2;
+}
+
+.hero-eyebrow {
+  color: var(--eqisa-dark);
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  font-weight: 700;
+}
+
+.hero-copy h1 {
+  margin: 22px 0 0;
+
+  color: var(--eqisa-dark);
+
+  font-family: "Arial Narrow", Arial, sans-serif;
+
+  font-size: clamp(48px, 5vw, 76px);
+
+  line-height: 0.92;
+
+  letter-spacing: -3px;
+}
+
+.hero-copy h1 span {
+  color: var(--eqisa-green);
+}
+
+.hero-copy p {
+  max-width: 490px;
+
+  margin-top: 30px;
+
+  color: #66736a;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 32px;
+}
+
+.hero-button {
+  padding: 15px 23px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+}
+
+.hero-button.primary {
+  background: var(--eqisa-green);
+
+  color: white;
+
+  box-shadow:
+    0 12px 30px rgba(32, 189, 66, 0.22);
+}
+
+.hero-button.secondary {
+  border: 1px solid #dce4df;
+
+  color: var(--eqisa-dark);
+}
+
+/* =========================
+   CHEMICAL GRAPHIC
+========================= */
+
+/* =========================
+   HERO LOGO
+========================= */
+
+.hero-graphic {
+  position: relative;
+
+  width: min(650px, 100%);
+  aspect-ratio: 1;
+
+  margin: auto;
+
+  display: grid;
+  place-items: center;
+}
+
+/* Resplandor detrás del logo */
+
+.hero-glow {
+  position: absolute;
+
+  width: 65%;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: rgba(32, 189, 66, 0.12);
+
+  filter: blur(55px);
+
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    transform: scale(0.9);
+    opacity: 0.45;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 0.8;
+  }
+}
+
+/* Logo */
+
+.hero-logo {
+  position: relative;
+
+  z-index: 5;
+
+  width: 82%;
+
+  animation:
+    logoAppear 1s ease-out both,
+    logoFloat 6s ease-in-out 1s infinite;
+
+  filter:
+    drop-shadow(0 25px 30px rgba(0, 0, 0, 0.12))
+    drop-shadow(0 0 25px rgba(32, 189, 66, 0.08));
+}
+
+.hero-logo img {
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+@keyframes logoAppear {
+  from {
+    opacity: 0;
+    transform: translateY(35px) scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes logoFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+/* =========================
+   ORBITS
+========================= */
+
+.logo-orbit {
+  position: absolute;
+
+  width: 72%;
+  height: 28%;
+
+  border: 2px solid rgba(32, 189, 66, 0.18);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.logo-orbit-1 {
+  transform: rotate(28deg);
+
+  animation: orbitFloat 7s ease-in-out infinite;
+}
+
+.logo-orbit-2 {
+  transform: rotate(-28deg);
+
+  border-color: rgba(7, 59, 36, 0.12);
+
+  animation: orbitFloatReverse 8s ease-in-out infinite;
+}
+
+@keyframes orbitFloat {
+  0%,
+  100% {
+    transform: rotate(28deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(34deg) scale(1.04);
+  }
+}
+
+@keyframes orbitFloatReverse {
+  0%,
+  100% {
+    transform: rotate(-28deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(-34deg) scale(1.04);
+  }
+}
+
+/* =========================
+   FLOATING DOTS
+========================= */
+
+.floating-dot {
+  position: absolute;
+
+  z-index: 6;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  background: var(--eqisa-green);
+
+  box-shadow:
+    0 0 0 6px rgba(32, 189, 66, 0.08),
+    0 8px 18px rgba(32, 189, 66, 0.25);
+}
+
+.dot-1 {
+  top: 20%;
+  right: 17%;
+
+  animation: dotFloat1 4s ease-in-out infinite;
+}
+
+.dot-2 {
+  bottom: 22%;
+  left: 16%;
+
+  width: 11px;
+  height: 11px;
+
+  animation: dotFloat2 5s ease-in-out infinite;
+}
+
+.dot-3 {
+  top: 42%;
+  left: 10%;
+
+  width: 8px;
+  height: 8px;
+
+  animation: dotFloat3 4.5s ease-in-out infinite;
+}
+
+@keyframes dotFloat1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(8px, -14px);
+  }
+}
+
+@keyframes dotFloat2 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-8px, 10px);
+  }
+}
+
+@keyframes dotFloat3 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(7px, -8px);
+  }
+}
