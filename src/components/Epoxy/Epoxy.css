@@ -1,0 +1,547 @@
+/* =========================================
+   EPOXY SECTION
+   ========================================= */
+
+.epoxy-section {
+  position: relative;
+  overflow: hidden;
+  padding: 130px 6vw;
+  background: #f7f8f6;
+  color: #17221a;
+}
+
+/* -----------------------------------------
+   CONTAINER
+   ----------------------------------------- */
+
+.epoxy-container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: center;
+
+  gap: 90px;
+}
+
+/* -----------------------------------------
+   CONTENT
+   ----------------------------------------- */
+
+.epoxy-content {
+  max-width: 620px;
+}
+
+.epoxy-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 24px;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+
+  color: #22b533;
+}
+
+.epoxy-eyebrow::before {
+  content: "";
+
+  width: 32px;
+  height: 2px;
+
+  background: #22b533;
+}
+
+/* -----------------------------------------
+   TITLE
+   ----------------------------------------- */
+
+.epoxy-content h2 {
+  margin: 0;
+
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+
+  font-weight: 800;
+  color: #17221a;
+}
+
+.epoxy-content h2 span {
+  display: block;
+
+  color: #22b533;
+}
+
+/* -----------------------------------------
+   TEXT
+   ----------------------------------------- */
+
+.epoxy-intro {
+  margin: 34px 0 18px;
+
+  max-width: 570px;
+
+  font-size: 1.25rem;
+  line-height: 1.65;
+
+  color: #3f4b43;
+}
+
+.epoxy-description {
+  max-width: 560px;
+
+  margin: 0;
+
+  font-size: 1rem;
+  line-height: 1.75;
+
+  color: #69736c;
+}
+
+/* -----------------------------------------
+   BUTTONS
+   ----------------------------------------- */
+
+.epoxy-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-top: 38px;
+}
+
+.epoxy-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  min-height: 54px;
+  padding: 0 27px;
+
+  border-radius: 100px;
+
+  text-decoration: none;
+
+  font-size: 0.92rem;
+  font-weight: 700;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.epoxy-button-primary {
+  color: white;
+  background: #22b533;
+
+  box-shadow: 0 12px 30px rgba(34, 181, 51, 0.2);
+}
+
+.epoxy-button-primary span {
+  font-size: 1.2rem;
+
+  transition: transform 0.3s ease;
+}
+
+.epoxy-button-primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 18px 38px rgba(34, 181, 51, 0.28);
+}
+
+.epoxy-button-primary:hover span {
+  transform: translateX(5px);
+}
+
+.epoxy-button-secondary {
+  color: #263129;
+
+  border: 1px solid #d5dbd6;
+  background: white;
+}
+
+.epoxy-button-secondary:hover {
+  transform: translateY(-3px);
+
+  border-color: #22b533;
+}
+
+/* -----------------------------------------
+   EXPERIENCE
+   ----------------------------------------- */
+
+.epoxy-experience {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-top: 50px;
+  padding-top: 28px;
+
+  border-top: 1px solid #dce1dd;
+}
+
+.epoxy-experience strong {
+  font-size: 3.5rem;
+  line-height: 1;
+
+  letter-spacing: -0.05em;
+
+  color: #22b533;
+}
+
+.epoxy-experience div {
+  display: flex;
+  flex-direction: column;
+}
+
+.epoxy-experience span {
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  color: #263129;
+}
+
+.epoxy-experience small {
+  margin-top: 4px;
+
+  font-size: 0.8rem;
+
+  color: #7a837d;
+}
+
+/* -----------------------------------------
+   VISUAL
+   ----------------------------------------- */
+
+.epoxy-visual {
+  position: relative;
+
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.epoxy-image-wrapper {
+  position: relative;
+
+  width: min(100%, 650px);
+  aspect-ratio: 0.95 / 1;
+
+  overflow: hidden;
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 30px 70px rgba(23, 34, 26, 0.16),
+    0 5px 20px rgba(23, 34, 26, 0.08);
+
+  transform: rotate(1.5deg);
+
+  transition:
+    transform 0.6s ease,
+    box-shadow 0.6s ease;
+}
+
+.epoxy-image-wrapper:hover {
+  transform: rotate(0deg) translateY(-8px);
+
+  box-shadow:
+    0 40px 90px rgba(23, 34, 26, 0.2),
+    0 8px 30px rgba(23, 34, 26, 0.1);
+}
+
+.epoxy-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.epoxy-image-wrapper:hover .epoxy-image {
+  transform: scale(1.04);
+}
+
+/* -----------------------------------------
+   IMAGE OVERLAY
+   ----------------------------------------- */
+
+.epoxy-image-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 45%,
+      rgba(0, 0, 0, 0.42) 100%
+    );
+
+  pointer-events: none;
+}
+
+/* -----------------------------------------
+   FLOATING CARD
+   ----------------------------------------- */
+
+.epoxy-floating-card {
+  position: absolute;
+
+  right: 28px;
+  bottom: 28px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 16px 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+
+  background: rgba(20, 28, 22, 0.78);
+
+  backdrop-filter: blur(12px);
+
+  color: white;
+
+  animation: epoxyFloat 4s ease-in-out infinite;
+}
+
+.epoxy-floating-icon {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: white;
+  background: #22b533;
+
+  font-size: 0.75rem;
+}
+
+.epoxy-floating-card div {
+  display: flex;
+  flex-direction: column;
+}
+
+.epoxy-floating-card strong {
+  font-size: 0.85rem;
+}
+
+.epoxy-floating-card span {
+  margin-top: 3px;
+
+  font-size: 0.72rem;
+
+  color: #bfc8c1;
+}
+
+@keyframes epoxyFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* -----------------------------------------
+   DECORATIVE ORBITS
+   ----------------------------------------- */
+
+.epoxy-orbit {
+  position: absolute;
+
+  border: 1px solid rgba(34, 181, 51, 0.18);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.epoxy-orbit-one {
+  width: 500px;
+  height: 500px;
+
+  right: -80px;
+  top: 40px;
+
+  transform: rotate(35deg);
+}
+
+.epoxy-orbit-two {
+  width: 350px;
+  height: 350px;
+
+  left: -80px;
+  bottom: 20px;
+
+  border-color: rgba(34, 181, 51, 0.1);
+}
+
+/* -----------------------------------------
+   BENEFITS
+   ----------------------------------------- */
+
+.epoxy-benefits {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1400px;
+
+  margin: 100px auto 0;
+
+  padding-top: 45px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid #dce1dd;
+}
+
+.epoxy-benefit {
+  display: flex;
+  gap: 20px;
+
+  padding: 0 35px;
+
+  border-right: 1px solid #dce1dd;
+}
+
+.epoxy-benefit:first-child {
+  padding-left: 0;
+}
+
+.epoxy-benefit:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+.epoxy-benefit-number {
+  flex-shrink: 0;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+
+  color: #22b533;
+}
+
+.epoxy-benefit h3 {
+  margin: 0 0 8px;
+
+  font-size: 1rem;
+
+  color: #263129;
+}
+
+.epoxy-benefit p {
+  margin: 0;
+
+  font-size: 0.88rem;
+  line-height: 1.6;
+
+  color: #737d76;
+}
+
+/* -----------------------------------------
+   RESPONSIVE
+   ----------------------------------------- */
+
+@media (max-width: 1050px) {
+  .epoxy-container {
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+  }
+
+  .epoxy-content {
+    max-width: 800px;
+  }
+
+  .epoxy-visual {
+    min-height: 550px;
+  }
+
+  .epoxy-image-wrapper {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 750px) {
+  .epoxy-section {
+    padding: 90px 6vw;
+  }
+
+  .epoxy-content h2 {
+    font-size: clamp(2.8rem, 12vw, 4rem);
+  }
+
+  .epoxy-intro {
+    font-size: 1.05rem;
+  }
+
+  .epoxy-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .epoxy-button {
+    width: 100%;
+  }
+
+  .epoxy-visual {
+    min-height: 420px;
+  }
+
+  .epoxy-image-wrapper {
+    border-radius: 20px;
+  }
+
+  .epoxy-floating-card {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .epoxy-benefits {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .epoxy-benefit,
+  .epoxy-benefit:first-child,
+  .epoxy-benefit:last-child {
+    padding: 0 0 30px;
+
+    border-right: none;
+    border-bottom: 1px solid #dce1dd;
+  }
+
+  .epoxy-benefit:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
