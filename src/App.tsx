@@ -31,10 +31,13 @@ function Home() {
     </>
   );
 }
+
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/redesign">
       <Routes>
+
         <Route
           path="/"
           element={<Home />}
@@ -59,8 +62,10 @@ function App() {
             </>
           }
         />
+
       </Routes>
     </BrowserRouter>
   );
 }
+
 export default App;

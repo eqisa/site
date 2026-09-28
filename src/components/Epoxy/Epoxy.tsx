@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Epoxy.css";
 
 const epoxyBenefits = [
@@ -57,9 +58,12 @@ export function Epoxy() {
               <span>→</span>
             </a>
 
-            <a href="/pisos-epoxicos">
-  Conoce nuestras soluciones →
-                </a>
+            <Link to="/pisos-epoxicos"
+             className="epoxy-button"
+          >
+            Conoce nuestras soluciones
+            <span>→</span>
+            </Link>
           </div>
 
           <div className="epoxy-experience">

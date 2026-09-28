@@ -29,7 +29,7 @@
       rgba(255, 255, 255, 0.35) 70%,
       rgba(255, 255, 255, 0.05) 100%
     ),
-    url("/images/piso-industrial.jpg") center / cover no-repeat;
+    url("/images/pisos.jpg") center / cover no-repeat;
 }
 
 .epoxy-hero-overlay {
@@ -679,7 +679,7 @@
         rgba(255, 255, 255, 0.91),
         rgba(255, 255, 255, 0.82)
       ),
-      url("/images/piso-industrial.jpg") center / cover;
+      url("/images/pisos.jpg") center / cover;
   }
 
   .epoxy-hero-content {
